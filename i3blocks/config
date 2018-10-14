@@ -1,0 +1,26 @@
+#Global properties
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+[compton]
+command=~/.config/i3blocks/blocks/running.sh compton
+label=Compton:
+interval=5
+separator=true
+
+[volume]
+label=VOL
+label=♪
+instance=Master
+#instance=PCM
+interval=once
+signal=10
+# Date Time
+#
+[time]
+#command=date '+%Y-%m-%d %H:%M:%S'
+command=date '+%c     '
+interval=5
+separator=true
+
